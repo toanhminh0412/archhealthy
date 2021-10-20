@@ -9,6 +9,10 @@ import { HomePage } from './screens/HomePage';
 import { ProductPage } from './screens/ProductPage';
 import { CartPage } from './screens/CartPage';
 import LoginPage from './screens/LoginPage';
+import axios from 'axios';
+
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 
 function App() {
   return (
