@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 # import django_heroku
 # import dotenv
-import dj_database_url
+# import dj_database_url
 
 # django_heroku.settings(locals())
 
@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
     #dotenv.load_dotenv(dotenv_file)
 
 DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 # Quick-start development settings - unsuitable for production
@@ -97,7 +97,6 @@ SIMPLE_JWT = {
 }
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -109,7 +108,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 SESSION_SAVE_EVERY_REQUEST = True
 
