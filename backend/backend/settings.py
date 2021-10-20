@@ -12,18 +12,18 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import dotenv
+# import django_heroku
+# import dotenv
 import dj_database_url
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
+# dotenv_file = os.path.join(BASE_DIR, ".env")
+# if os.path.isfile(dotenv_file):
+    #dotenv.load_dotenv(dotenv_file)
 
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)
@@ -36,9 +36,9 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 SECRET_KEY = 'django-insecure-t-8(tkjt4lmj4683yg0w62wuhhv-^gt)11)xwao#d+2kmudpb)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['archhealthy-ecommerce.herokuapp.com', '127.0.0.1:8000', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -120,7 +120,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'build')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
