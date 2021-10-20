@@ -1,0 +1,34 @@
+.product-display-container {
+    margin-left: 20%;
+}
+
+.product-display {
+    margin-top: 5%;
+}
+
+.product-img {
+    width: 100%;
+    height: 50vh;
+}
+
+.product-info {
+    margin-left: 5%;
+}
+
+.subtotal-text {
+    font-size: 200%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.qty-text {
+    font-size: 125%;
+}
+
+#qty-field {
+    width: 60%;
+}
+
+.price-text {
+    font-size: 125%;
+}

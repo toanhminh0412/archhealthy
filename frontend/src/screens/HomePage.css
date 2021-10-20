@@ -1,0 +1,19 @@
+.slide-header {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.carousel-slide {
+    max-height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+
+.carousel-slide img {
+    opacity: 0.3;
+}
+
+.slide-caption {
+    top: 65%;
+    transform: translateY(-65%);    
+}

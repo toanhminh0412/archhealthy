@@ -1,0 +1,27 @@
+.nav-brand {
+    font-size: 25px;
+}
+
+.nav-subsections {
+    width: 100%;
+}
+
+.nav-option {
+    text-align: center;
+    font-size: 120%;
+}
+
+.nav-option span {
+    transition-duration: 0.5s;
+    padding-bottom: 2px;
+}
+
+.nav-option span:hover,
+.nav-option span:active {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-option:last-child {
+    text-align: right;
+}
+
